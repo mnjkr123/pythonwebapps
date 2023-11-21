@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            background-image: url("https://rocksolidbodybuilding.com/wp-content/uploads/2022/02/Bodybuilder-Picture.jpg"); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-position: center bottom; /* Adjusted to prevent cutting off from the top */
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 45%;
+            background-color: rgba(128, 128, 128, 0.5); /* Gray background for form */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: gray;
+            width: 100%;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/calculate_bmi" method="post">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" name="weight" required>
+        <br>
+        <label for="height">Height (cm):</label>
+        <input type="text" name="height" required>
+        <br>
+        <button type="submit">Calculate BMI</button>
+    </form>
+</body>
+</html>
